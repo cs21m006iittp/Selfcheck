@@ -6,7 +6,6 @@ import torch.optim as optim
 from sklearn.cluster import KMeans  
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline
 from sklearn.datasets import make_blobs, make_circles
 from sklearn.metrics.cluster import v_measure_score
 from sklearn.metrics.cluster import homogeneity_score
