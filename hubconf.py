@@ -202,7 +202,7 @@ class MyNN(nn.Module):
     
     self.fc_encoder = nn.Linear(in_features = inp_dim, out_features = hid_dim)# write your code inp_dim to hid_dim mapper
     self.fc_decoder = nn.Linear(in_features = hid_dim, out_features = inp_dim) # write your code hid_dim to inp_dim mapper
-    self.fc_classifier = nn.Linear((in_features = hid_dim, out_features = num_classes)) # write your code to map hid_dim to num_classes
+    self.fc_classifier = nn.Linear(in_features = hid_dim, out_features = num_classes) # write your code to map hid_dim to num_classes
     
     self.relu = nn.ReLu()#write your code - relu object
     self.softmax = nn.Softmax() #write your code - softmax object
