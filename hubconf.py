@@ -105,7 +105,7 @@ def build_lr_model(X=None, y=None):
   # Build logistic regression, refer to sklearn
   return lr_model
 
-def build_rf_model(X=None, y=None):
+def build_rf_model(X, y):
   pass
   rf_model = RandomForestClassifier(n_estimators=100)
   # write your code...
@@ -113,7 +113,7 @@ def build_rf_model(X=None, y=None):
   rf_model.fit(X,y)
   return rf_model
 
-def get_metrics(model=None,X=None,y=None):
+def get_metrics(model,X,y):
   pass
   ypred = model.predict(X)
   print("Classification Report is : ")
@@ -162,7 +162,7 @@ def get_paramgrid_rf():
   # write your code here...
   return rf_param_grid
 
-def perform_gridsearch_cv_multimetric(model=None, param_grid=None, cv=5, X=None, y=None, metrics=['accuracy','roc_auc']):
+def perform_gridsearch_cv_multimetric(model, param_grid, cv=5, X, y, metrics=['accuracy','roc_auc']):
   
   # you need to invoke sklearn grid search cv function
   # refer to sklearn documentation
